@@ -1307,6 +1307,10 @@ html{
   margin-right: auto;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -1315,12 +1319,28 @@ html{
   display: none;
 }
 
+.w-full{
+  width: 100%;
+}
+
+.max-w-5xl{
+  max-width: 64rem;
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -1339,9 +1359,17 @@ html{
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
+
 .bg-rinterio-100{
   --tw-bg-opacity: 1;
   background-color: rgb(171 239 95 / var(--tw-bg-opacity));
+}
+
+.bg-rinterio-300{
+  background-color: rgba(171, 239, 95, 0.5);
 }
 
 .p-8{
@@ -1353,6 +1381,15 @@ html{
   padding-right: 0.25rem;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
 .font-manrope{
   font-family: Manrope, sans-serif;
 }
@@ -1360,6 +1397,10 @@ html{
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .font-extrabold{
@@ -1376,15 +1417,31 @@ html{
   color: rgb(115 115 115 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 @media (min-width: 768px){
   .md\:flex{
     display: flex;
+  }
+
+  .md\:w-auto{
+    width: auto;
   }
 
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(0.75rem * var(--tw-space-x-reverse));
     margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -1400,5 +1457,10 @@ html{
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
